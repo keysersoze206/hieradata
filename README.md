@@ -119,7 +119,7 @@ lookup('teams').each |String $team| { # Hiera lookup; for each loop
       shell      => '/bin/bash',
     }
   } # End each $user loop
-} # Emd each $team loop
+} # End each $team loop
 ```
 ### References
 - [About Hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html)
