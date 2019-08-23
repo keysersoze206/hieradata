@@ -1,0 +1,34 @@
+---
+# Hiera 5 Global configuration file
+version: 5
+defaults:  # Used for any hierarchy level that omits these keys.
+  datadir: /etc/puppetlabs/puppet/hieradata
+  data_hash: yaml_data # Use the built-in YAML backend.
+
+hierarchy:
+  - name: Classifier Configuration Data
+    data_hash: classifier_data
+
+  - name: "Encrypted per-host data"
+    lookup_key: eyaml_lookup_key
+    path: "nodes/%{::clientcert}.eyaml" # File path, relative to datadir, including file extension
+    options:
+      pkcs7_private_key: /etc/puppetlabs/puppet/eyaml/private_key.pkcs7.pem
+      pkcs7_public_key:  /etc/puppetlabs/puppet/eyaml/public_key.pkcs7.pem
+
+  - name: "Encrypted user data"
+    lookup_key: eyaml_lookup_key
+    path: "users.eyaml" # File path, relative to datadir, including file extension
+    options:
+      pkcs7_private_key: /etc/puppetlabs/puppet/eyaml/private_key.pkcs7.pem
+      pkcs7_public_key:  /etc/puppetlabs/puppet/eyaml/public_key.pkcs7.pem
+
+  - name: "Encrypted common data"
+    lookup_key: eyaml_lookup_key
+    path: "common.eyaml" # File path, relative to datadir, including file extension
+    options:
+      pkcs7_private_key: /etc/puppetlabs/puppet/eyaml/private_key.pkcs7.pem
+      pkcs7_public_key:  /etc/puppetlabs/puppet/eyaml/public_key.pkcs7.pem
+
+  - name: "Common data"
+    path: "common.yaml" # File path, relative to datadir, including file extension
