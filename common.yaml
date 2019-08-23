@@ -1,0 +1,20 @@
+---
+git:
+  url: github.com
+teams:
+    - dev
+    - it
+    - ops
+users:
+  dev:
+    - alan
+    - bob
+    - ryan
+  it:
+    - ben
+    - james
+    - stan
+  ops:
+    - john
+    - peter
+    - steve
