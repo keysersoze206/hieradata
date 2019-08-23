@@ -110,7 +110,7 @@ $ sudo /usr/local/bin/puppet lookup git.url
 
 `lookup('<KEY>')` -- Lookup Hiera key(s) and value(s) in code
 ```ruby
-lookup('teams').each |String $team| {
+lookup('teams').each |String $team| { # Hiera lookup; for each loop
   lookup("users.${team}").each |String $user| { # Hiera lookup; for each loop
     user { $user:
       ensure     => present,
