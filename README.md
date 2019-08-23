@@ -110,14 +110,16 @@ $ sudo /usr/local/bin/puppet lookup git.url
 
 `lookup('<KEY>')` -- Lookup Hiera key(s) and value(s) in code
 ```ruby
-lookup("users.${team}").each |String $user| { # Hiera lookup; for each loop
-  user { $user:
-    ensure     => present,
-    managehome => true,
-    password   => lookup("${user}.password"), # Hiera lookup
-    shell      => '/bin/bash',
-  }
-} # End each loop
+lookup('teams').each |String $team| {
+  lookup("users.${team}").each |String $user| { # Hiera lookup; for each loop
+    user { $user:
+      ensure     => present,
+      managehome => true,
+      password   => lookup("${user}.password"), # Hiera lookup
+      shell      => '/bin/bash',
+    }
+  } # End each $user loop
+} # Emd each $team loop
 ```
 ### References
 - [About Hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html)
