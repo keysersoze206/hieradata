@@ -120,5 +120,6 @@ lookup("users.${team}").each |String $user| { # Hiera lookup; for each loop
 } # End each loop
 ```
 ### References
+- [About Hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html)
 - [Encrypt Your Data Using Hiera-Eyaml](https://puppet.com/blog/encrypt-your-data-using-hiera-eyaml)
 - [My journey to securing sensitive data in Puppet code](https://puppet.com/blog/my-journey-securing-sensitive-data-puppet-code)
