@@ -1,5 +1,5 @@
 # hieradata
-[**_Hiera_**](https://puppet.com/docs/puppet/latest/hiera.html) is a built-in key-value configuration data lookup system, used for separating data from Puppet code. <br>
+"[**_Hiera_**](https://puppet.com/docs/puppet/latest/hiera.html) is a built-in key-value configuration data lookup system, used for separating data from Puppet code." <br>
 
 This repository is an example of a basic Hiera configuration and the associated data stores. Encrypted data stores use the `.eyaml` extension. The private keys were intentionally excluded so, if you want to demo Hiera, clone the repo, generate your own keys with `eyaml createkeys` and have fun. It's easy, read on!
 
