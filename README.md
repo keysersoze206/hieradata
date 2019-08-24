@@ -10,6 +10,8 @@ This repository is an example of a basic Hiera configuration and the associated 
 **[Usage](#usage)**<br>
 **[References](#references)**<br>
 **[Additional Plugins](#additional-plugins)**<br>
+**[Contribute](#contribute)**<br>
+**[License](#license)**<br>
 
 ### Installation
 1. On the Puppet `[master]`, use the following command to deploy this repository:<br>
