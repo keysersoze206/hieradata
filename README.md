@@ -6,6 +6,7 @@
 **[Requirements](#requirements)**<br>
 **[Usage](#usage)**<br>
 **[References](#references)**<br>
+**[Additional Plugins](#additional-plugins)**<br>
 
 ### Installation
 1. On the Puppet `[master]`, use the following command to deploy this repository:<br>
@@ -122,9 +123,12 @@ lookup('teams').each |String $team| { # Hiera lookup; for each loop
 } # End each $team loop
 ```
 ### References
-- [About Hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html)
-- [Encrypt Your Data Using Hiera-Eyaml](https://puppet.com/blog/encrypt-your-data-using-hiera-eyaml)
-- [My journey to securing sensitive data in Puppet code](https://puppet.com/blog/my-journey-securing-sensitive-data-puppet-code)
-- The Official Hiera module:
+1. [About Hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html).
+2. Terri Haber (21 October 2014), _[Encrypt Your Data Using Hiera-Eyaml](https://puppet.com/blog/encrypt-your-data-using-hiera-eyaml)_, Puppet.com.
+3. Gene Liverman (15 August 2018), _[My journey to securing sensitive data in Puppet code](https://puppet.com/blog/my-journey-securing-sensitive-data-puppet-code)_, Puppet.com.
+4. The Official Hiera module:
    - [Puppet Forge](https://forge.puppet.com/hunner/hiera)
    - [GitHub](https://github.com/hunner/puppet-hiera/blob/master/README.md)
+
+### Additional Plugins
+-  [Hiera-eyaml](https://atom.io/packages/hiera-eyaml) package for Atom.io
