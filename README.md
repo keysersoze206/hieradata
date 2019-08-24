@@ -140,4 +140,4 @@ Please open an issue or fork and submit Pull Request.
 ### License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-To the extent possible under law, [keysersoze206](https://github.com/keysersoze206) has waived all copyright and related or neighboring rights to this work.
+To the extent possible under law, [keysersoze206](https://github.com/keysersoze206) has waived all copyright and related, or neighboring rights, to this work.
