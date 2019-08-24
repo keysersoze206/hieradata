@@ -26,7 +26,7 @@ See [Usage](#usage) section for more information.
 ### Requirements
 - [puppet](https://github.com/puppetlabs/puppetserver)
 - [hiera](https://puppet.com/docs/puppet/5.4/hiera_intro.html)
-- [hiera_eyaml](https://github.com/voxpupuli/hiera-eyaml)
+- [hiera-eyaml](https://github.com/voxpupuli/hiera-eyaml)
   + [Installed on Puppet `[master]`](https://github.com/voxpupuli/hiera-eyaml#installing-hiera-eyaml-for-the-new-puppet-server)
   + [Installed on Developer's system](https://github.com/voxpupuli/hiera-eyaml#installing-hiera-eyaml)
 
