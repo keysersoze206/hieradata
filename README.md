@@ -12,7 +12,7 @@
 1. On the Puppet `[master]`, use the following command to deploy this repository:<br>
 `sudo git clone git@github.com:keysersoze206/hieradata.git /etc/puppetlabs/puppet/hieradata`
 2. Run: `sudo chown -R pe-puppet:pe-puppet /etc/puppetlabs/puppet/hieradata`.
-3. Add `hiera_config = $confdir/hieradata/hiera.yaml` to `puppet.conf`.
+3. Add `hiera_config = $confdir/hieradata/hiera.yaml` to `$confdir/puppet.conf`.
 4. Restart the `pe-puppetserver` service.
 
 ### Encryption Keys
@@ -25,7 +25,7 @@ See [Usage](#usage) section for more information.
 
 ### Requirements
 - [puppet](https://github.com/puppetlabs/puppetserver)
-- [hiera](https://puppet.com/docs/puppet/5.4/hiera_intro.html)
+- [hiera](https://puppet.com/docs/puppet/latest/hiera_intro.html)
 - [hiera-eyaml](https://github.com/voxpupuli/hiera-eyaml)
   + [Installed on Puppet `[master]`](https://github.com/voxpupuli/hiera-eyaml#installing-hiera-eyaml-for-the-new-puppet-server)
   + [Installed on Developer's system](https://github.com/voxpupuli/hiera-eyaml#installing-hiera-eyaml)
