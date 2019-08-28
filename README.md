@@ -110,7 +110,7 @@ block: >
 
 `puppet lookup <KEY>` -- Lookup Hiera key(s) and value(s) on Puppet `[master]`
 ```bash
-$ sudo /usr/local/bin/puppet lookup git.url
+$ puppet lookup git.url
 --- github.com
 ```
 
