@@ -140,7 +140,7 @@ lookup('teams').each |String $team| { # Hiera lookup; for each loop
 
 ### Contribute
 Contributions are always welcome!
-Please open an issue or fork and submit Pull Request.
+Please open an issue or fork and submit a Pull Request.
 
 ### License
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
